@@ -1,17 +1,16 @@
+
+
 import React from 'react'
 
-
-
-const Card = ({ title, description, priority, onSelect }) => {
+// Use destructuring to extract the card object from the props
+const Card = ({ card, onViewDetails }) => {
     return (
-        <div>
-            <h3>{title}</h3>
-            {/* <div>{description}</div> */}
-            {/* <div>{priority}</div> */}
-            <button onClick={onSelect} >View Details</button>            
+        <div className='card'>
+            {/* Displays card title */}
+            <h3 className='card-title'>{card.title}</h3>
+            <button onClick={() => onViewDetails(card)}>I am a button</button>
+
         </div>
-
-
     )
 }
 
