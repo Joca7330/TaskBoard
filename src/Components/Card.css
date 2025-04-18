@@ -1,0 +1,25 @@
+.card {
+    /* border: green solid 3px; */
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+    border: black solid 1px;
+
+}
+
+.card-title {
+    /* border: red solid 1px; */
+}
+
+.button {
+    background-color: #4285f4;
+    color: white;
+    /* border: hotpink solid 1px; */
+    border-radius: 4px;
+    height: 49px;
+    padding: 8px 12px;
+    margin-top: auto;
+    cursor: pointer;
+    
+}

@@ -1,4 +1,4 @@
-
+import './Card.css'
 
 import React from 'react'
 
@@ -8,7 +8,9 @@ const Card = ({ card, onViewDetails }) => {
         <div className='card'>
             {/* Displays card title */}
             <h3 className='card-title'>{card.title}</h3>
-            <button onClick={() => onViewDetails(card)}>I am a button</button>
+            <button
+            className='button'
+            onClick={() => onViewDetails(card)}>View Details</button>
 
         </div>
     )

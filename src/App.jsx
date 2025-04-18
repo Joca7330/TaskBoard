@@ -4,11 +4,9 @@
 import React, { useState } from 'react'
 import Card from './Components/Card';
 import CardDetails from './Components/CardDetails';
-
+import './App.css';
 // Container for card components
 const App = () => {
-
-
   const cardsData = [
     {
       title: "Fix login bug",
@@ -46,21 +44,18 @@ const App = () => {
       priority: "High"
     }
   ];
-// State to track the selected card
+  // State to track the selected card
   const [selectedCard, setSelectedCard] = useState(null)
-// Handler for viewing card details
+  // Handler for viewing card details
   const handleViewDetails = (card) => {
     setSelectedCard(card)
     console.log(selectedCard);
-
   }
-
   return (
     <div className='app'>
       <h1>Task Cards</h1>
       <div className='cards-grid'>
         {cardsData.map((card, index) => {
-          // console.log(card);
           return <Card
             // Using the array index as a key
             key={index}
