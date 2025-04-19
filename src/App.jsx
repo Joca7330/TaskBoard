@@ -64,13 +64,13 @@ const App = () => {
             onViewDetails={handleViewDetails}
           />
         })}
-        {/* Card details displays on screen when button is clicked */}
-        {selectedCard && (
-          <CardDetails
-            card={selectedCard}
-          />
-        )}
       </div>
+      {/* Card details displays on screen when button is clicked */}
+      {selectedCard && (
+        <CardDetails
+          card={selectedCard}
+        />
+      )}
     </div>
   )
 }
